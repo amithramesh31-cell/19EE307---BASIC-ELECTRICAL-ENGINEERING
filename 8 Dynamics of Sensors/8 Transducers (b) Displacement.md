@@ -1,96 +1,121 @@
-## Exp. No. 8
-**Date:**  
+## Exp. No. 7
+**Date:**  06.10.2025
 
-## Dynamics of Sensors/Transducers (b) Displacement
-
+## Dynamics of Sensors/Transducers (a) pressure 
 
 ## link
-LVDT: https://sl-coep.vlabs.ac.in/exp/lvdt/index.html
+Strain Gauge: https://sl-coep.vlabs.ac.in/exp/strain-gauge-sensor/procedure.html
 
 ## Aim
-Aim: To understand working principle of LVDT
-Objective:-
-Study the relation between core displacement and output of LVDT
-Understand the effect of change in supply frequency on LVDT performance
-Understand the effect of change in excitation (supply) voltage on LVDT performance
+Aim: To understand the working principle of Strain gauge
+
+Objectives
+Plot the characteristics of Strain gauge.
+Understand the effect of various parameters on the strain gauge performance.
+
 
 ## Theory
 Prerequisite
-Student must be well versed with
+What do we mean by Stress?
+Stress is the force generated inside an object in response to an applied external force.This internal force divided by the cross-sectional area of the object is called stress,which is expressed in Pa (Pascal) or N/m2.If the direction of the external force is vertical to the cross-sectional area, the stress is called vertical stress.
 
-The basics of transformers
-Magnetic materials and their properties
-Concept of inductance and mutual inductance
-LVDT is linear Variable Differential Transformer. It is electromechanical transducer. It converts the rectilinear displacement of any object to which it is coupled mechanically in electrical signal proportional to it.
+What do we mean by strain?
+When a bar is pulled, it causes change in its length by ΔL, making its new length = L (original length) + ΔL (change in length). The ratio of this change in length ΔL, to the original length, L, is called strain. The strain is expressed in ε (epsilon): ε = ΔL / L Strain in the same direction as the external force is called longitudinal strain. Since strain is a ratio, it is an absolute number having no unit. Strain in the direction perpendicular to the external force is called lateral strain. Each material has a certain ratio of lateral strain to longitudinal strain.This ratio is called Poisson's ratio.
 
-Construction:
-LVDT is made of two main components: the movable armature and the outer transformer windings. LVDT consists of 3 windings. Centre one is Primary winding while the other two are secondary windings. The secondary's are identical and placed symmetrical about the primary. The secondary coils are connected in series-opposition. Moving element of LVDT is called core. It is a cylindrical armature made of ferromagnetic material. It is free to move along the axis of the tube. At one end, the core is coupled to an object whose displacement is to be measured, while the other end moves freely inside the coil's hollow bore.
+V = - (dε(trans)/ dε(axial))
+where V is the resulting Poisson's ratio, ε(trans) is transverse strain (negative for axial tension (stretching), positive for axial compression) ε(axial) is axial strain (positive for axial tension, negative for axial compression). The value of stress is directly proportional to the strain. Thus we can find the stress in a material if we can find the strain initiated by external force.
 
-Working:
-An alternating current is connected to the primary. This current must be of appropriate amplitude and frequency. It is also called as Primary Excitation. The frequency is usually in the range 1 to 10 kHz. This current causes a voltage to be induced in each secondary proportional to its mutual inductance with the primary. While the frequency of induced voltage is same as that of excitation frequency, its amplitude varies with the position of the iron core. As the core moves, the voltages induced in the secondary's changes due to change in mutual inductance. The coils are connected in series but in opposite phase , so that the output voltage is the difference between the two secondary voltages. When the core is exactly at central position, i.e at equal distance from the two secondary's, equal but opposite voltages are induced in these two coils, so the output voltage is zero. When the core is displaced in one direction, the voltage in one coil increases with respect to the other, causing the output voltage to increase from zero to a maximum value. This voltage is in phase with the primary voltage. When the core moves in the other direction, the output voltage also increases from zero to a maximum value, but the phase is opposite to that of the primary. The magnitude of the output voltage is proportional to the distance moved by the core. The phase of the voltage indicates the direction of the displacement.
-<img width="394" height="346" alt="image" src="https://github.com/user-attachments/assets/aad543ca-89a8-465f-b2fd-c634ad4ccff9" />
+Introduction to Strain Gauge
+Strain gauge transducer transforms mechanical elongation and compression into measurable value.
 
+Types of Strain Gauges based on principle of working:
+Mechanical: It is made up of two separate plastic layers. The bottom layer has a ruled scale on it and the top layer has a red arrow or pointer. One layer is glued to one side of the crack and one layer to the other. As the crack opens,the layers slide very slowly past one another and the pointer moves over the scale.The red crosshairs move on the scale as the crack widens. Some mechanical strain gauges are even more crude than this. The piece of plastic or glass is stick across a crack and observed its nature.
 
-Case 1:
-When no displacement is applied to the core and the core remains in the null position without any movement then the voltage induced in both the secondary windings is equal which results in net output is equal to zero
+Electrical: The most common electrical strain gauges are thin, rectangular-shaped strips of foil with maze-like wiring patterns on them leading to a couple of electrical cables. When the material is strained, the foil strip is very slightly bent out of shape and the maze-like wires are either pulled apart (so their wires are stretched slightly thinner) or pushed together (so the wires are pushed together and become slightly thicker). Changing the width of a metal wire changes its electrical resistance. This change in resistance is proportional to the stress applied. If the forces involved are small, the deformation is elastic and the strain gauge eventually returns to its original shape.
 
-                        i.e., E s1 - E s2 = 0
-          
-Case 2:
-When displacement is applied in such a way that the core moves in the left direction then the voltage induced in that (left) secondary coil is greater as compared to the emf induced in the other secondary coil. Therefore the net output is E s1-E s2
+Piezoelectric: Some materials such as quartz crystals and various types of ceramics, are effectively "natural" strain gauges. When pushed and pulled, they generate tiny electrical voltages between their opposite faces. This phenomenon is called piezoelectricity. By measuring the voltage from a piezoelectric sensor we can easily calculate the strain. Piezoelectric strain gauges are the most sensitive and reliable devices.
 
-Case 3:
-When force is applied to core such that it moves in the right hand side direction then the emf induced in the secondary coil 2 is greater compared to the emf voltage induced in the secondary coil 1, therefore the net output voltage is E s2- E s1.
+Electrical Strain Gauge: A strain gauge takes advantage of the physical property of electrical conductance. It does not depend on merely the electrical conductivity of a conductor, but also the conductor's geometry. When an electrical conductor is stretched within the limits of its elasticity such that it does not break or permanently deform, it will become narrower and longer. Similarly, when it is compressed, it will broaden and shorten. The change in the resistance is due to variation in the length and cross sectional area of gauge wire.
 
-As seen, the voltage undergoes 180 degrees phase shift while going through null. The output E is out of phase with the excitation. Usually this AC output voltage is converted by suitable electronic circuitry to high level DC voltage or current that is more convenient to use.
+Gauge Factor:
+The characteristics of the strain gauges are described in terms of its sensitivity (gauge factor). Gauge factor is defined as unit change in resistance for per unit change in length of strain gauge wire given as
 
-Residual Voltage:
-Output voltage at the null position is ideally zero. But because of harmonics in the excitation voltage and stray capacitance coupling between primary and secondary a non zero voltage exists at null position. This is called residual voltage. If it is less than 1 % of full scale output voltage ( which is the normal case) it is in the acceptable limits.
+G.F. = (ΔR/RG) / ε where, ΔR - the change in resistance caused by strain, RG - is the resistance of the unreformed gauge, and ε - is strain.
 
-Eddy Currents:
-When alternating current is passed through the coil, a magnetic field is generated in and around the coil. When a rod is brought in close proximity to a conductive material, the rod's changing magnetic field generates current flow in the material. These are called as eddy currents. The eddy currents produce their own magnetic fields that interact with the primary magnetic field of the coil. As the eddy current flows through conducting core, it creates heat. This causes power loss in the core. To reduce the eddy current losses, the core is provided with a slot. This slot cut the magnetic field created hence reducing the flux. Laminated core is also used for the same purpose.
+Effect of Temperature:
+The resistive type strain gauges are sensitive to temperature variation; therefore it becomes necessary to account for variations in strain gauge resistance due to temperature changes. Using dummy gauge in opposite arm of the active gauge compensates the temperature variation.
 
-Types of LVDT based on applications:
-General Purpose LVDT: for use in many industrial and research applications.
-Precision LVDT: for sensitive gauging and quality control applications
-Submersible LVDT: Hermetically sealed for use in industrial and research environments involving corrosive fluids and gases, high temperature and vibrations, etc.
-Types of LVDT based on range of operation:
-Short stroked: full-scale linear ranges from ±0.01 inch (±0.25 mm) to ±0.5 inch (±12.7 mm)
-Long stroked: full-scale linear ranges from ±0.5 inch (±12.7 mm) to ±18.5 inch (±470 mm)
-Types of LVDT based on excitation used
-AC LVDT: AC LVDTs are excited by a AC voltage having frequency between 50 hertz and 25 Kilohertz with 2.5 Kilohertz as a nominal value. The carrier frequency is generally selected to be at least 10 times greater than the highest expected frequency of the core motion. AC-operated LVDT's are generally smaller in size and more accurate than DC versions. They are able to tolerate the extreme variations in operating temperature than the DC LVDT.
-Modern circuits often supply phase detection circuits along with the LVDT. A phase sensitive detector circuit (PSD) is useful to make the measurement direction sensitive. It is connected at the output of the LVDT and compares the phase of the secondary output with the primary signal to judge the direction of movement. The output of the phase sensitive detector after passing through low pass filter is in the dc voltage form used for steady deflection.
+Arrangement:
+In certain applications where equal and opposite strains are known to exist it is possible to attach similar gauges in way that one gauge experiences positive strain and other negative strain. Depending on the number of gauges used the bridge, the circuit configurations are :
 
-DC LVDT: The DC LVDT is provided with onboard oscillator, carrier amplifier, and demodulator circuitry. The major advantages of DC-operated ("DC-to-DC") LVDT's are ease of installation and signal conditioning, the ability to operate from dry cell batteries in remote locations, and lower system cost (especially in multipoint applications). The DC LVDT is temperature limited operating from typically - 40 deg C to
-+120degC
+1. Quarter Bridge :
+<img width="493" height="311" alt="image" src="https://github.com/user-attachments/assets/2afd9b4e-86f2-496f-aabc-9e1dc463e089" />
 
-Types of LVDT based on armature:
-Unguided Armature: This is simplest configuration in which armature fits loosely in the cavity of the coils bore. This requires proper installation to ensure proper movement along the axis. This allows frictionless movement with no wear. This type have unlimited fatigue life, good repeatability with infinite resolution. Free armature is mainly suitable for short range, high speed applications.
+2. Half Bridge :
+<img width="492" height="331" alt="image" src="https://github.com/user-attachments/assets/f0a0ba23-dea5-4781-83ef-6ef924f694e3" />
 
-Guided (Captive) Armature: In this type, armature is restrained and guided by low friction bearing assembly. These are suitable for long working ranges. To avoid possibility of misalignment the armature is guided.
+3. Full Bridge :
+<img width="532" height="289" alt="image" src="https://github.com/user-attachments/assets/794565ee-0cbf-474e-9fb4-47974375cb75" />
 
-Spring Extended Armature – This armature is similar to guided armature LVDT with an addition that , it has internal spring to push the armature continuously to its fullest possible extension. This maintains light and reliable contact with the measured object.
+In Quarter Bridge, the strain gauge is connected in one arm as shown in the above diagram. In half bridge arrangement two active gauges are used, while in case of full bridge all the gauges are active. In this arrangement two acts in tension while other two are compression. With the help of this type of arrangement temperature compensation is also achieved. When possible, the full-bridge configuration is the best to use. This is true not only because it is more sensitive than the others, but because it is linear while the others are not. Quarter-bridge and half-bridge circuits provide an output (imbalance) signal that is only approximately proportional to applied strain gauge force. Linearity, or proportionality, of these bridge circuits is best when the amount of resistance change due to applied force is very small compared to the nominal resistance of the gauge(s). With a full-bridge, however, the output voltage is directly proportional to applied force, with no approximation.
 
-Most suitable for static or slow moving applications.
-<img width="664" height="355" alt="image" src="https://github.com/user-attachments/assets/c292b94d-81db-44c0-911a-a7c30f74119b" />
+Effect of Lead-Wire:
+Strain gauges are sometimes mounted at a distance from the measuring equipment. This increases the possibility of errors due to temperature variations, lead desensitization, and lead-wire resistance changes.
+
+Two wire:
+In a two-wire installation, as shown in figure, the two leads are in series with the strain-gauge element, and any change in the lead-wire resistance (R1) will be indistinguishable from changes in the resistance of the strain gage (Rg). In two-wire installations, the error introduced by lead-wire resistance is a function of the resistance ratio R1/Rg. The lead error is usually not significant if the lead-wire resistance (R1) is small in comparison to the gage resistance (Rg), but if the lead-wire resistance exceeds 0.1% of the nominal gage resistance, this source of error becomes significant. Therefore, in industrial applications, lead-wire lengths should be minimized or eliminated by locating the transmitter directly at the sensor.
+<img width="809" height="497" alt="image" src="https://github.com/user-attachments/assets/3724119c-2dc4-4490-8ada-3c7793f1ba96" />
 
 
-Applications:
-LVDTs are commonly used for:
-Position feedback in servomechanisms
-Automated measurement in machine tools and many other industrial and scientific applications.
-Measurement of displacement ranging from fraction of mm to cm
-Acting as a secondary transducer, it can be used for force, weight and pressure measurement.
+Three wire:
+To correct for lead-wire effects, an additional, third lead can be introduced to the top arm of the bridge, as shown in the above Figure. In this configuration, wire C acts as a sense lead with no current flowing in it, and wires A and B are in opposite legs of the bridge. This is the minimum acceptable method of wiring strain gages to a bridge to cancel at least part of the effect of extension wire errors. Theoretically, if the lead wires to the sensor have the same nominal resistance, the same temperature coefficient, and are maintained at the same temperature, full compensation is obtained. In reality, wires are manufactured to a tolerance of about 10%, and three-wire installation does not completely eliminate two-wire errors, but it does reduce them by an order of magnitude. If further improvement is desired, four-wire and offset-compensated installations should be considered.
 
+Types of strain gauge based on construction:
+Optical sensors are sensitive and accurate, but are delicate and not very popular in industrial applications. They use interference fringes produced by optical flats to measure strain. Optical sensors operate best under laboratory conditions. The photoelectric gauge uses a light beam, two fine gratings, and a photocell detector to generate an electrical current that is proportional to strain. The gage length of these devices can be as short as 1/16 inch, but they are costly and delicate. Semiconductor strain gauges: For measurements of small strain, semiconductor strain gauges, so called piezoresistors, are often preferred over foil gauges. Semiconductor strain gauges depend on the piezoresistive effects of silicon or germanium and measure the change in resistance with stress as opposed to strain. The semiconductor bonded strain gauge is a wafer with the resistance element diffused into a substrate of silicon. The wafer element usually is not provided with a backing, and bonding it to the strained surface requires great care as only a thin layer of epoxy is used to attach it. The size is much smaller and the cost much lower than for a metallic foil sensor. The same epoxies that are used to attach foil gages are used to bond semiconductor gages. The advantages are higher unit resistance and sensitivity whereas, greater sensitivity to temperature variations and tendency to drift are disadvantages in comparison to metallic foil sensors. Another disadvantage of semiconductor strain gages is that the resistance-to-strain relationship is nonlinear. With software compensation this can be avoided.
+
+
+Thin-film strain gauge: These gauges eliminate the need for adhesive bonding. The gauge is produced by first depositing an electrical insulation (typically a ceramic) onto the stressed metal surface, and then depositing the strain gauge onto this insulation layer. Vacuum deposition or sputtering techniques are used to bond the materials molecularly. Because the thin-film gauge is molecularly bonded to the specimen, the installation is much more stable and the resistance values experience less drift. Another advantage is that the stressed force detector can be a metallic diaphragm or beam with a deposited layer of ceramic insulation.
+
+Diffused semiconductor strain gauges: This is a further improvement in strain gage technology as they eliminate the need for bonding agents. By eliminating bonding agents, errors due to creep and hysteresis also are eliminated. The diffused semiconductor strain gage uses photolithography masking techniques and solid-state diffusion of boron to molecularly bond the resistance elements. Electrical leads are directly attached to the pattern.
+
+The diffused gauge is limited to moderate-temperature applications and requires temperature compensation.
+
+Diffused semiconductors often are used as sensing elements in pressure transducers. They are small, inexpensive, accurate and repeatable, provide a wide pressure range, and generate a strong output signal. Their limitations include sensitivity to ambient temperature variations, which can be compensated for in intelligent transmitter designs.
+<img width="389" height="618" alt="image" src="https://github.com/user-attachments/assets/e72327b2-4aba-4fed-aa4e-efa5184dbe95" />
+<img width="474" height="537" alt="image" src="https://github.com/user-attachments/assets/ca7e5a80-15f8-47b4-84e4-edb27ce8a7b8" />
+<img width="843" height="568" alt="image" src="https://github.com/user-attachments/assets/d630e673-0ff2-49cd-beb3-14943783f4af" />
+
+Types of strain gauge based on mounting:
+Bonded strain gauge:
+A bonded strain-gage element, consisting of a metallic wire, etched foil, vacuum-deposited film, or semiconductor bar, is cemented to the strained surface.
+
+
+Unbonded Strain Gauge:
+The unbonded strain gage consists of a wire stretched between two points in an insulating medium such as air. One end of the wire is fixed and the other end is attached to a movable element.
+
+
+Strain gauge selection criteria:
+Gauge Length
+Number of Gauges in Gauge Pattern
+Arrangement of Gauges in Gauge Pattern
+Grid Resistance
+Mass
+Stability
+Temperature sensitivity
+Carrier Material
+Gauge Width
+Availability
+Low cost
+Effect of ambient conditions
 
 # Circuit Diagram in software
 
-
+<img width="1435" height="797" alt="image" src="https://github.com/user-attachments/assets/0f702cf1-d2fc-428c-9c25-7072347b252f" />
+<img width="1457" height="795" alt="image" src="https://github.com/user-attachments/assets/bf1bb4c2-c8f4-42ad-b39d-768380de108b" />
+<img width="1483" height="803" alt="image" src="https://github.com/user-attachments/assets/b557c10f-a62e-4b9a-8463-afab48f6f39f" />
 
 # Output Graph / Tabulation
 
 
-# Sample images
-
-
 # Result
+The working principle of strain gauge using straingauge simulator is studied.
